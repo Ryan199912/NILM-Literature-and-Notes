@@ -1,0 +1,26 @@
+### 1. Confusion Matrix
+
+- ***\*True Positive (TP):\**** The model correctly predicts the positive class.
+- ***\*True Negative (TN):\**** The model correctly predicts the negative class.
+- ***\*False Positive (FP):\**** The model predicts positive, but the actual class is negative.
+- ***\*False Negative (FN):\**** The model predicts negative, but the actual class is positive.
+
+准确率（Accuracy）表示分类正确的样本占总样本个数的比例。
+
+**精确率（Precision）又叫查准率** 表示预测结果为正例的样本中实际为正样本的比例。measures how many of the positive predictions made by the model are actually correct. 
+
+***\*For example:\**** Suppose a model predicts 5 cases as positive. Out of these, 4 are actually positive and 1 is negative. In this case, the precision is 80% (4/5).
+
+
+
+**召回率（Recall）又被称为查全率,** also known as **Sensitivity or True Positive Rate**, 
+
+表示预测结果为正样本中实际正样本数量占全样本中正样本的比例。measures how many of the actual positive cases were correctly identified by the model. It focuses on the model’s ability to detect positive instances.
+
+***\*For example:\**** Suppose there are 10 actual positive cases in the dataset. If the model correctly identifies 4 of them as positive, the recall becomes 40% (4/10). This means the model detected only a portion of the actual positive cases.
+
+
+
+F1 score是精确率和召回率的一个加权平均。
+
+**F1 Score** combines precision and recall into a single metric using the harmonic mean. It helps evaluate a model by balancing both precision and recall.

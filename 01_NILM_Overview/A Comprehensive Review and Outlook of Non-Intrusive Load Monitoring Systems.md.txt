@@ -1,0 +1,58 @@
+## **Data Acquisition**, 
+
+**low-frequency** (LF, typically below several Hz) [[3](https://dl.acm.org/doi/full/10.1145/3814607#core-collateral-Bib0003)] and **high-frequency** (HF, ranging from kHz to MHz)
+
+Dataset：REDD BLUED
+
+## **Event Detection**
+
+ a transition between distinct operational states within an electrical signal constitutes an event
+
+电信号中不同运行状态之间的转换构成一个事件。
+
+![img](https://dl.acm.org/cms/10.1145/3814607/asset/0aa96d95-3dfb-4694-9583-a9ba2754dce3/assets/images/medium/csur-2025-0707-f04.jpg)
+
+(1)**Type I (Finite State Machines)**: Binary ON/OFF operation.
+
+(2)  **Type II (Discrete Multi-State):** Multiple discrete states with defined transitions.
+
+(3)**Type III (Continuously Varying State)**: Smoothly modulated power consumption.
+
+(4)**Type IV (Permanent State)**: Persistent operation at constant power (e.g., hard-wired detectors, communication devices) 
+
+方法：
+
+(1)**Expert Heuristics**: Rule-based systems requiring appliance-specific thresholds (e.g., power demand, variation). Primarily effective for high-wattage appliances, these methods dominated early research (1990s–2000s).
+
+(2)**Probabilistic Models**: Statistical frameworks inferring events via learned parameters, necessitating supervised training phases.
+
+(3)**Matched Filters**: Template-matching techniques correlating observed waveforms with known appliance signatures. While training-free, this approach imposes high sampling-rate constraints.
+
+## **Feature Extraction**,
+
+ Aggregated features characterizing appliance operational behavior are termed **Load Signatures (LS)**
+
+表征电器运行行为的聚合特征称为负载特征（LS）。(1)
+
+- **Power-Based Signatures:**
+- **Current Harmonic Signatures:** 
+- **Time-Domain Signatures**
+- **Two-Dimensional Trajectories:**
+
+##  **Appliance Classification**,
+
+employed real and reactive power steps
+
+steady-state waveform features:
+
+ML，CNN，DL
+
+##  **Energy Disaggregation**.
+
+**supervised approaches** and **unsupervised approaches**
+
+![img](https://dl.acm.org/cms/10.1145/3814607/asset/156f07e1-ffad-4557-9e7d-be6f65350c38/assets/images/medium/csur-2025-0707-f06.jpg)
+
+**N-to-1 (Appliance-Specific) Modeling** 
+
+**1-to-N (Multi-Target) Modeling**

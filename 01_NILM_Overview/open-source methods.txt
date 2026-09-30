@@ -1,0 +1,19 @@
+![Fig. 1](https://ars.els-cdn.com/content/image/1-s2.0-S1364032125009281-gr1.jpg)
+
+# **分类**
+
+**高频数据**以千赫兹级采样率进行采样，通常用于负载识别，其中利用详细的波形特征来识别电器。
+
+**低频数据**通常每 1 到 60 秒采样一次，更适合用于能量分解或电器状态检测，这些都依赖于聚合的功率曲线。
+
+根据任务目标，研究可以分为**能量分解和负荷识别**（也称为状态检测）。
+
+ based on task objectives, studies can be divided into **energy disaggregation and load identification** (also referred to as state detection) 
+
+**event-based and eventless methods**
+
+ Energy Disaggregation (ED), which corresponds to a **regression** problem, and State Detection (SD), which is a **classification** problem.
+
+ML is sensitive to the quality of   feature design and the resolution of the input data.
+
+most LF NILM studies rely primarily on active power as the main input feature, while reactive power or RMS current is used in only a few studies depending on dataset availability [[56\]](https://www.sciencedirect.com/science/article/pii/S1364032125009281?casa_token=yk91XKU-cH8AAAAA:mMua6BVsFxKh_q_VxZGqSJrQaSCFnyTxKgaEwZCNJtbCOazcW97M4-cWCE34bQgaJi5UHHbwlJA9#bib0280), [[129\]](https://www.sciencedirect.com/science/article/pii/S1364032125009281?casa_token=yk91XKU-cH8AAAAA:mMua6BVsFxKh_q_VxZGqSJrQaSCFnyTxKgaEwZCNJtbCOazcW97M4-cWCE34bQgaJi5UHHbwlJA9#bib0645). This constraint limits the feature space and may reduce the model’s ability to distinguish between appliances with similar steady-state power profiles.
